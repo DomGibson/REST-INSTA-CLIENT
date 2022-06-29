@@ -14,7 +14,7 @@ function Post() {
       fetchPhotos();
     }, [])
 
-    const localhost = `http://localhost:${env.PORT}/posts`
+    const localhost = `/posts`
     const fetchPhotos = async () => {
       const res = await fetch(localhost);
       const data = await res.json();

@@ -2,7 +2,7 @@ import env from "react-dotenv";
 import "../App.css";
 import { useState } from "react";
 
-const localhost = `http://localhost:${env.PORT}/post`
+const localhost = `/post`
 
 function Input() {
   const [username, setUsername] = useState("");
