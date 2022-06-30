@@ -1,6 +1,6 @@
-import env from "react-dotenv";
 import { useState, useEffect } from 'react';
 import '../App.css';
+import env from 'react-dotenv';
 
 function Post() {
 
@@ -12,9 +12,9 @@ function Post() {
   
     useEffect(() => {
       fetchPhotos();
-    }, [])
+    })
 
-    const localhost = `/posts`
+    const localhost = `http://localhost:${env.PORT}/posts`
     const fetchPhotos = async () => {
       const res = await fetch(localhost);
       const data = await res.json();
@@ -42,4 +42,3 @@ function Post() {
 }
 
 export default Post;
-
