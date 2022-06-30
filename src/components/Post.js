@@ -12,7 +12,7 @@ function Post() {
   
     useEffect(() => {
       fetchPhotos();
-    })
+    }, [])
 
     const localhost = `http://localhost:${env.PORT}/posts`
     const fetchPhotos = async () => {
