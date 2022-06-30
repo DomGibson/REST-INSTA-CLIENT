@@ -1,4 +1,3 @@
-import env from "react-dotenv";
 import "../App.css";
 import { useState } from "react";
 
