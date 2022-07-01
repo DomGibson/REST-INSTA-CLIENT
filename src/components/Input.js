@@ -1,7 +1,7 @@
 import "../App.css";
 import { useState } from "react";
 
-const localhost = `/post`
+const localhost = `https://insta-restapi.herokuapp.com/post`
 
 function Input() {
   const [username, setUsername] = useState("");
